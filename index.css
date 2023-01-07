@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    background: rgb(15, 15, 66);
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:500;
+    text-transform: capitalize;
+}
+h1{
+    color: white;
+    font-size:6vmin;
+}
+
+.container-navbar{
+    background:white;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: fit-content;
+    padding: 30px;
+}
+
+.logo{
+    font-weight: 800;
+    color: blue;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 4vmin;
+}
+
+span{
+    color: rgb(255, 147, 6);
+}
+
+.links{
+    display: flex;
+    gap: 25px;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing:.5px;
+}
+
+.links a:hover{
+    color: rgb(255, 147, 6);
+}
+
+.btn{
+    padding:3px 8px;
+    text-transform: uppercase;
+    background-color:rgb(255, 147, 6);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.btn:hover{
+    color: rgb(255, 147, 6);
+    background: transparent;
+    border: 1px solid white;
+}
+
+.btn.gry{
+    background-color: gray;
+    color: white;
+}
+
+.main-container{
+    width: 100vw;
+    min-height: 550px;
+    background-attachment: fixed;
+    background: url('/image/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 2000px rgba(15, 34, 206, 0.486);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-side h1{
+    margin-bottom: 10px;
+}
+
+.left-side p{
+    color: rgb(197, 192, 192);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.left-side button{
+    padding:6px 10px;
+    margin-right:20px ;
+}
+
+.right-side img{
+    position: relative;
+}
+
+.right-side .circle{
+    width: 24rem;
+    height: 24rem;
+    background:orange;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    right: 16rem;
+    top: 12rem;
+}
+
+.courses{
+    margin-top:90px;
+}
+
+
+.courses h1{
+    text-align: center;
+}
+
+.container-course{
+    margin-top: 75px;
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    justify-content: center;
+    place-items: center;
+}
+
+
+
+.container-course article{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-course article img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-1 h3{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:3rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+.image-1:hover h3{
+    opacity: 1;
+}
+
+
+.image-1:before{
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image-1:before {
+    opacity:0;
+}
+.image-1:hover:before {
+    opacity:1;
+}
+
+.about-us{
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.aboutus-container{
+    display:grid;
+    grid-template-columns: 35% 55%;
+    place-items: center;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+
+.about_left{
+    width: 400px;
+    height: 450px;
+}
+.about_left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    opacity: .6;
+}
+.about_left img:hover{
+    opacity: 1;
+}
+
+.about-us > h1{
+    text-align: center;
+}
+
+.sub_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:55px;
+    gap:10px;
+
+}
+
+.sub{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    border-radius:8px;
+    width: 200px;
+    height: 150px;
+}
+.sub > h3{
+    font-weight: bold;
+    font-size:20px;
+    color: white;
+}
+
+.div_sub1{
+    background-color: green;
+}
+.div_sub2{
+    background-color: rgb(20, 56, 175);
+}
+.div_sub3{
+    background-color: rgb(255, 62, 159);
+}
+.div_sub4{
+    background-color: rgb(240, 111, 25);
+}
+
+.about_right > p{
+    color: rgb(226, 217, 217);
+    margin-top: 25px;
+}
+
+.promo_student{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container_promo{
+    width: 650px;
+    height: 550px;
+    background-color: rgba(228, 224, 224, 0.164);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 55px;
+    border-radius:8px;
+}
+
+.container_promo input,select , .sign_up > button{
+    width: 45%;
+    height: 45px;
+    margin: 15px 3px; 
+    padding: 0 8px;
+    border-radius: 6px;
+}
+.container_promo input::placeholder{
+    text-transform: capitalize;
+}
+
+.container_promo select{
+    text-transform: capitalize;
+}
+
+
+.professeur > h1{
+    text-align: center;
+    margin: 60px 0;
+}
+
+
+.pro_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.profe > img{
+    border-radius: 8px;
+}
+
+.content h3{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.content h4{
+    text-align: center;
+    color: orange;
+}
+
+.socials{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 25px;
+}
+
+.socials img{
+    margin:15px 0;
+    cursor: pointer;
+}
+
+.contact-us{
+    margin: 55px 0;
+}
+
+.contact-us h1{
+    text-align:center;
+}
+
+.contact_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 35% 55%;
+    place-items: center;
+    justify-content: center;
+}
+
+.contact_right{
+    width: 500px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.form{
+    width: 100%;
+}
+
+.contact_right input{
+    width:45%;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 147, 6);
+    color: white;
+    margin: 45px 3px;
+    padding: 3px 8px;
+    font-size:16px;
+}
+
+::placeholder{
+    text-transform: capitalize;
+}
+
+.form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 5px 8px;
+    margin-bottom: 45px;
+    background-color:transparent;
+    border: 1px solid rgb(255, 147, 6);
+    color: white;
+}
+
+.form button{
+    width: 100%;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(255, 147, 6);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
